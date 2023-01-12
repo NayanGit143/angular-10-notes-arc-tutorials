@@ -1,0 +1,86 @@
+1. Project folder <simpleCRM>
+
+    ng new <project_name>
+    
+2.e2e
+    -Protractor framework
+        -by default
+     -end to end test scripts
+     -will end with .e2e-spec . ts extension
+     src
+          app.e2e-spec. ts
+          login.e2e-spec . ts
+      protractor. conf.js
+          -> configuration settings for running the end to end test scripts
+      tsconfig.json
+          -basic typescript setting
+          
+3. src
+      entire source code of your application is inside src
+      app
+        app.module. ts
+        -app component
+          -app.component . html -> view/ui/html code
+          -app.component . scss - stylesheet
+          -app.component. spec.ts -> unit test script
+          -app.component . ts > class file
+      assets
+          -images
+          -mock data
+          -apis
+          
+      environments
+          -local
+          -dev
+          -qa
+          -uat
+          -prod
+          
+      -index.html
+          Single Page Application
+              index.html
+                  <app-root>
+      -main.ts
+           bootstrapModule
+              - AppModule
+              
+           Starting point of your application
+           Any other module in our Bootstrap
+               - No mandatory that it should be AppModule
+               
+      -polyfills.ts
+            supporting older browsers    
+
+      styles.scss
+            - global/common stylesheet for elements
+              a{
+              
+              }
+
+      test.ts
+          - test script for the main.ts file
+          -testing the main.ts file code
+
+      angular.json
+          ->backbone of your application
+                -scripts
+                >ports
+                ->settings
+                ->schematics
+                    -angular cli
+                          build
+                          -test
+                          
+      karma.conf . js
+           ->spec.ts
+           -test script runner
+           -running or executing all our test scripts
+
+     tsconfi8
+           -build out put directory
+           sourmap
+     - tslint           
+           -enforce coding standards
+
+---Next Episode --
+package.json & package-lock. json                  
